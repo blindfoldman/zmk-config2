@@ -1,0 +1,11 @@
+ {
+    chosen {
+        zmk,underglow = &underglow;
+    };
+
+    underglow: underglow {
+        compatible = "zmk,ws2812-gpio";
+        chain-length = <10>; // поставь свое количество
+        gpios = <&gpio0 6 GPIO_ACTIVE_HIGH>; // ПИН ПРОВЕРЬ
+    };
+ }
